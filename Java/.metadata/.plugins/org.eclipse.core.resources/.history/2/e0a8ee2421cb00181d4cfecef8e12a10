@@ -1,0 +1,37 @@
+import java.util.*;
+
+public class NewtonRaphson {
+
+	public static void main(String[] args) {
+		///Aproximacion inicial
+		///Numero de iteraciones
+		
+		System.out.println("Dame la aproximacion inicial entre 0 y 1: ");
+		
+		Scanner init=new Scanner(System.in);
+		float x0=init.nextFloat();
+
+		System.out.println("Dame el numero de iteraciones: ");
+		
+		Scanner numiter=new Scanner(System.in);
+		float iter=numiter.nextFloat();
+		
+		
+		System.out.println("Primera funcion: f(x)=cos(x)-x³ en [0,1]");
+		float x1;
+		
+		for(float i=0;i<iter;i++) {
+			
+			x1= (float) (x0-(Math.cos(x0)-Math.pow(x0, 3))/((-1)*Math.sin(x0)-3*Math.pow(x0,2)));
+			
+			System.out.print("\nIter "+i+": "+x1);
+			
+			x0= x1;
+		}
+		
+		
+		
+		
+	}
+
+}
