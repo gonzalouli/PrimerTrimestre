@@ -9,11 +9,13 @@
 #include <stdio.h>
 #include <string.h>
 #include "puzle.h"
-#include "nodo.h"
 #include "listaia.h"
+#include "nodo.h"
+
+
 #include "busquedaAlum.h"
 
-int busqueda();
+/*int busqueda();
 
 int buscaRepe(tEstado *s, Lista L1);
 Lista ordenar(Lista Abiertos,Lista Sucesores);
@@ -21,7 +23,7 @@ Lista ordenar(Lista Abiertos,Lista Sucesores);
 Lista insertar_orden(Lista abiertos, tNodo *n);
 Lista a_estrella(Lista abiertos, Lista sucesores);
 Lista voraz(Lista abiertos, Lista sucesores);
-
+*/
 
 void dispCamino(tNodo *nodo)
 {

@@ -4,7 +4,7 @@
 #include "listaia.h"
 #include "nodo.h"
 
-int busqueda();
+///int busqueda();
 
 int main(){
 
